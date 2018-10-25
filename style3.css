@@ -1,0 +1,22 @@
+.menu{
+
+width:100%:
+background-color:black;
+<!--ngjyra ne background-->
+}
+<!--vlen vetem per clasen menu dhe atributin 'a'-->
+.menu a{
+float:left;
+text-align:center;
+width:10%;
+padding:5px 5;
+color:whitesmoke;
+font-size:17px;
+
+}
+.menu a:hover{
+background-color:seagreen;
+}
+.active{
+background-color:yellow;
+}

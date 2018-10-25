@@ -1,0 +1,7 @@
+.serach input[type=text]{
+    float:right;
+    padding:5px 5;
+    border: none;
+    font-size:17px;
+    width: 100%;
+}
