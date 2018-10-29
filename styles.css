@@ -1,4 +1,34 @@
-p {
-margin-right: 100px;
-margin-left: 100px;
+
+p1,p2 {
+    position: absolute;
+    top: 800px;
+    right: 950px;
+}
+p3,p4{
+    position: absolute;
+    left: 900px;
+    top: 800px;
+}
+p5,p6{
+    position: absolute;
+    left: 450px;
+    bottom: 240px;
+    top: 800px;
+}
+p7,p8{
+position: relative;
+    right: 450px;
+    bottom: 220px;
+    top: 130px;
+
+}
+p9,p10{
+    position: relative;
+    bottom: 347px;
+    top: 10px;
+}
+p11,p12{
+    position: relative;
+    left: 450px;
+    bottom: 120px;
 }
