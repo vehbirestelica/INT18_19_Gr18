@@ -32,3 +32,13 @@ p11,p12{
     left: 450px;
     bottom: 120px;
 }
+table{
+    width: 100%;
+}
+th{
+    text-align: left;
+    padding: 10px;
+}
+a {
+   color:orange;
+}
