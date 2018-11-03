@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact us!</title>    
+</head>
+<body>
+<form method="get" action="http://www.randyconnolly.com/tests/process.php">
+<fieldset><legend>Contact Us!</legend>
+<table>
+<tr>
+<td colspan="2">
+<p><label>Subject :</label>
+<input type="text" name="subject" size="90"/>    
+</p>
+    <p><label>Feedback :</label><br/>
+<textarea name="Feedback" rows="9" size="95"></textarea>    
+</p>
+    <hr/>
+<p><label>Client's Name :</label>
+<input type="text" name="client" placeholder="Your name..."/>    
+</p>
+<p>
+<label>Client's Age :</label>
+<input type="radio" name="type" value="<18"/> &lt;18
+<input type="radio" name="type" value=">18"/> &gt;18
+<input type="radio" name="type" value=">45"/> &gt;45
+</p>
+<p>
+<label>Continent :</label>
+<select name="continent">
+<option>Choose your continent :</option>   
+<option>Africa</option>
+<option>Asia</option>    
+<option>Australia</option>    
+<option>Europe</option>    
+<option>North America</option>    
+<option>South America</option>  
+</select>
+</p>
+<p>
+<label>E-mail : </label>
+<input type="text" name="email" placeholder="e-mail or phone"/>
+<select name="e-mail">
+<option>E-mail format :</option>
+<option selected="selected">@gmail.com</option>    
+<option>@hotmail.com</option>
+<option>@outlook.com</option>
+<option>@live.com</option>
+<option>@msn.com</option></select>
+</p>
+<P><label>Date :</label>
+<input type="date" name="date"/>    
+</P>
+<p>
+<label>Time :</label>
+<input type="time" name="time" />
+</p>
+<P><label>Rate our site :</label>
+<input type="number" name="rate" min="1" max="10"/>
+</P>
+<input type="submit" value="Submit"/>
+<input type="reset"  value="Reset"/>
+</td>
+</tr>      
+</table>
+<p>Thank you for your time :) </p>    
+</fieldset>    
+</form>
+</body>
+</html>
