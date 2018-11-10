@@ -2,6 +2,10 @@
 <html>
 <head>
     <style>
+        #teksti{
+            background-color:cadetblue;
+            border-radius: 0px 20px 0px 20px;
+        }
         body{
             background-image: url(images/contact-us2.jpg);
             background-attachment: fixed;
@@ -30,7 +34,7 @@ function goBack() {
         <a href="#"style="color: darkgray">&nbsp;&nbsp;GALLERY&nbsp;&nbsp;</a>
         <a href="pages/longtextlink.html" style="color: darkgray">&nbsp;&nbsp;LONG TEXT LINK</a></b><hr>
             </id></div><br>
-<button onclick="goBack()">&laquo; Home</button>
+<button id="teksti"onclick="goBack()">&laquo; Home</button>
 <form method="get" action="http://www.randyconnolly.com/tests/process.php">
     <div class="kontakti">
 <fieldset><legend>Contact Us!</legend>
@@ -38,24 +42,24 @@ function goBack() {
 <tr>
 <td colspan="2">
 <p><label>Subject :</label>
-<input type="text" name="subject" size="90"/ >    
+<input id="teksti"type="text" name="subject" size="90"/ >    
 </p>
     <p><label>Feedback :</label><br/>
-<textarea name="Feedback" rows="9" cols="100" size="200"></textarea>    
+<textarea id="teksti" name="Feedback" rows="9" cols="100" size="200"></textarea>    
 </p>
     <hr/>
 <p><label>Client's Name :</label>
-<input type="text" name="client" placeholder="Your name..."/>    
+<input id="teksti"type="text" name="client" placeholder="Your name..."/>    
 </p>
 <p>
 <label>Client's Age :</label>
-<input type="radio" name="type" value="<18"/> &lt;18
-<input type="radio" name="type" value=">18"/> &gt;18
-<input type="radio" name="type" value=">45"/> &gt;45
+<input id="teksti"type="radio" name="type" value="<18"/> &lt;18
+<input id="teksti"type="radio" name="type" value=">18"/> &gt;18
+<input id="teksti"type="radio" name="type" value=">45"/> &gt;45
 </p>
 <p>
 <label>Continent :</label>
-<select name="continent">
+<select id="teksti"name="continent">
 <option>Choose your continent :</option>   
 <option>Africa</option>
 <option>Asia</option>    
@@ -67,8 +71,8 @@ function goBack() {
 </p>
 <p>
 <label>E-mail : </label>
-<input type="text" name="email" placeholder="e-mail or phone"/>
-<select name="e-mail">
+<input id="teksti"type="text" name="email" placeholder="e-mail or phone"/>
+<select id="teksti"name="e-mail">
 <option>E-mail format :</option>
 <option selected="selected">@gmail.com</option>    
 <option>@hotmail.com</option>
@@ -77,17 +81,17 @@ function goBack() {
 <option>@msn.com</option></select>
 </p>
 <P><label>Date :</label>
-<input type="date" name="date"/>    
+<input id="teksti"type="date" name="date"/>    
 </P>
 <p>
 <label>Time :</label>
-<input type="time" name="time" />
+<input id="teksti"type="time" name="time" />
 </p>
 <P><label>Rate our site :</label>
-<input type="number" name="rate" min="1" max="10"/>
+<input id="teksti"type="number" name="rate" min="1" max="10"/>
 </P>
-<input type="submit" value="Submit"/>
-<input type="reset"  value="Reset"/>
+<input id="teksti"type="submit" value="Submit"/>
+<input id="teksti"type="reset"  value="Reset"/>
 </td>
 </tr>      
 </table>
