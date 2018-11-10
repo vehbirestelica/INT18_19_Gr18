@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body{
+            background-image: url(images/contact-us2.jpg);
+            background-attachment: fixed;
+                
+        }
+        .kontakti{
+            color: whitesmoke;
+        }
+       
+    </style>
 <title>Contact us!</title>
 <script>
 function goBack() {
@@ -8,18 +19,29 @@ function goBack() {
 }
 </script>
 </head>
-<body>
+<body><hr>
+    <div class="menu" >     
+        <b><a class="menu" href="index.html" style="color:darkgray">&nbsp;HOME </a>
+        <id class="menu2">
+        <a href="pages/contact.html"  class="active" style="color:darkgray" >&nbsp;&nbsp;CONTACT&nbsp;&nbsp;</a>
+        <a href="pages/team.html"  style="color:darkgray">&nbsp;&nbsp;TEAM&nbsp;</a>
+    <a href="#" style="color: darkgray">&nbsp;&nbsp;DROPDOWN&nbsp;&nbsp;</a>
+    <a href="#" style="color: darkgray">&nbsp;&nbsp;PORTIFOLIO&nbsp;&nbsp;</a>
+        <a href="#"style="color: darkgray">&nbsp;&nbsp;GALLERY&nbsp;&nbsp;</a>
+        <a href="pages/longtextlink.html" style="color: darkgray">&nbsp;&nbsp;LONG TEXT LINK</a></b><hr>
+            </id></div><br>
 <button onclick="goBack()">&laquo; Home</button>
 <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+    <div class="kontakti">
 <fieldset><legend>Contact Us!</legend>
 <table>
 <tr>
 <td colspan="2">
 <p><label>Subject :</label>
-<input type="text" name="subject" size="90"/>    
+<input type="text" name="subject" size="90"/ >    
 </p>
     <p><label>Feedback :</label><br/>
-<textarea name="Feedback" rows="9" size="95"></textarea>    
+<textarea name="Feedback" rows="9" cols="100" size="200"></textarea>    
 </p>
     <hr/>
 <p><label>Client's Name :</label>
@@ -70,7 +92,7 @@ function goBack() {
 </tr>      
 </table>
 <p>Thank you for your time :) </p>    
-</fieldset>    
+        </fieldset>   </div> 
 </form>
 </body>
 </html>
