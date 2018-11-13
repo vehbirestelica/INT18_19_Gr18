@@ -1,36 +1,40 @@
 
 p1,p2 {
     position: absolute;
-    top: 800px;
-    right: 950px;
+    top: 820px;
+    left: 100px;
 }
 p3,p4{
     position: absolute;
-    left: 900px;
-    top: 800px;
+    top: 820px;
+    right: 100px;
+    
 }
 p5,p6{
+   
     position: absolute;
-    left: 450px;
-    bottom: 240px;
-    top: 800px;
+    left: 590px;
+    top: 820px;
 }
 p7,p8{
 position: relative;
+ 
     right: 450px;
-    bottom: 220px;
-    top: 130px;
+    top: 1200;
 
 }
 p9,p10{
     position: relative;
-    bottom: 347px;
-    top: 10px;
+     
+    bottom: -100px;
+    left: 33px;
 }
 p11,p12{
     position: relative;
-    left: 450px;
-    bottom: 120px;
+     text-align-last: right;
+     
+    left: 524px;
+    bottom: 30px;
 }
 table{
     width: 100%;
