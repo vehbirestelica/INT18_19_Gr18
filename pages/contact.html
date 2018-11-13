@@ -4,12 +4,11 @@
     <style>
         #teksti{
             background-color:cadetblue;
-            border-radius: 0px 20px 0px 20px;
+            border-radius: 20px 20px 20px 20px;
         }
         body{
             background-image: url(images/contact-us2.jpg);
             background-attachment: fixed;
-                
         }
         .kontakti{
             color: whitesmoke;
@@ -27,12 +26,12 @@ function goBack() {
     <div class="menu" >     
         <b><a class="menu" href="index.html" style="color:darkgray">&nbsp;HOME </a>
         <id class="menu2">
-        <a href="pages/contact.html"  class="active" style="color:darkgray" >&nbsp;&nbsp;CONTACT&nbsp;&nbsp;</a>
-        <a href="pages/team.html"  style="color:darkgray">&nbsp;&nbsp;TEAM&nbsp;</a>
+        <a href="contact.html"  class="active" style="color:darkgray" >&nbsp;&nbsp;CONTACT&nbsp;&nbsp;</a>
+        <a href="team.html"  style="color:darkgray">&nbsp;&nbsp;TEAM&nbsp;</a>
     <a href="#" style="color: darkgray">&nbsp;&nbsp;DROPDOWN&nbsp;&nbsp;</a>
     <a href="#" style="color: darkgray">&nbsp;&nbsp;PORTIFOLIO&nbsp;&nbsp;</a>
         <a href="#"style="color: darkgray">&nbsp;&nbsp;GALLERY&nbsp;&nbsp;</a>
-        <a href="pages/longtextlink.html" style="color: darkgray">&nbsp;&nbsp;LONG TEXT LINK</a></b><hr>
+        <a href="longtextlink.html" style="color: darkgray">&nbsp;&nbsp;LONG TEXT LINK</a></b><hr>
             </id></div><br>
 <button id="teksti"onclick="goBack()">&laquo; Home</button>
 <form method="get" action="http://www.randyconnolly.com/tests/process.php">
@@ -64,21 +63,14 @@ function goBack() {
 <option>Africa</option>
 <option>Asia</option>    
 <option>Australia</option>    
-<option>Europe</option>    
+<option selected="selected">Europe</option>    
 <option>North America</option>    
 <option>South America</option>  
 </select>
 </p>
-<p>
 <label>E-mail : </label>
-<input id="teksti"type="text" name="email" placeholder="e-mail or phone"/>
-<select id="teksti"name="e-mail">
-<option>E-mail format :</option>
-<option selected="selected">@gmail.com</option>    
-<option>@hotmail.com</option>
-<option>@outlook.com</option>
-<option>@live.com</option>
-<option>@msn.com</option></select>
+<input id="teksti"type="email" name="email" placeholder="e-mail or phone"/>
+</select>
 </p>
 <P><label>Date :</label>
 <input id="teksti"type="date" name="date"/>    
