@@ -17,22 +17,19 @@ p5,p6{
     top: 820px;
 }
 p7,p8{
-position: relative;
- 
+
+    position: relative;
     right: 450px;
     top: 1200;
 
 }
 p9,p10{
     position: relative;
-     
     bottom: -100px;
     left: 33px;
 }
 p11,p12{
     position: relative;
-     text-align-last: right;
-     
     left: 524px;
     bottom: 30px;
 }
