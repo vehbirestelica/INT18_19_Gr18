@@ -1,13 +1,15 @@
+<!DOCTYPE html>
 <html>
-<head><title>Sistemi Diellor</title>
-    <style>
-        body{
-    background-color: black;
+    <head>
+        <title>Sistemi Diellor</title>
+<style>
+body {
+    background-image: url(universi.jpg);
 }
-h1{
-    position:fixed;
-    font-family: arial;
-    font-size: 2em;
+h1 {
+   position: fixed;
+   font-family: Arial
+   font-size: 2em;
    text-align: center;
    color: white; 
    text-shadow: 2px 2px 2px gray;
@@ -22,7 +24,7 @@ h2 {
    text-align: center;
    color: white; 
    visibility: hidden;
-   animation-name: dukshmeria;
+   animation-name: visibility;
    animation-delay: 1s;
    animation-duration: 10s;
    animation-iteration-count: 1;
@@ -40,32 +42,21 @@ span {
    margin: 10px;
 }
 li {
+ color: white;
    line-height: 20px; 
-     animation-name: dukshmeria1;
 }
-        li:hover{
-            animation-name: dukshmeria1;
-        }
-span#dielli_tekst, span#merkuri_tekst, span#venera_tekst, span#toka_tekst {
+span#diellit, span#mert, span#vent, span#tokat {
    position: fixed;
    bottom: 0;
    right: 0;
    margin: 30px;
    display: none; 
 }
-        #dielli:hover{
-            animation-name:dielli1;
-        }
-        #teksti1{}
 @keyframes dukshmeria {
-   from {
-       visibility: hidden;
-    }
-   to {
-       visibility: visible;
-    }
-   
-div#dielli{
+   from {visibility: hidden;}
+   to {visibility: visible;}
+}
+div#dielli {
    position: fixed;
    top: 150px;
    left: -100px;
@@ -89,6 +80,10 @@ div#merkuri {
    left: 220px;
    height: 38px;
    width: 38px;
+    animation-name: orbita_venera;
+     animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
    background: linear-gradient(-45deg, black, brown, #86b300, #e6b800);
    border-radius: 50% 50% 50% 50%;
 }
@@ -100,9 +95,7 @@ div#merkuri {
    width: 40px;
    background: linear-gradient(-45deg, black 10%, blue 10%, white);
    border-radius: 50% 50% 50% 50%;
-    
 }
-
 #hena {
     position: relative;
     height: 10px;
@@ -114,56 +107,79 @@ div#merkuri {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-/*
-#marsi {
-   position: relative;
-   top: 171px;
-   left: 320px;
-   height: 40px;
-   width: 40px;
-   background: linear-gradient(-45deg, black 10%, blue 10%, white);
-   border-radius: 50% 50% 50% 50%;
-}
-#jupiteri {
-   position: relative;
-   top: 171px;
-   left: 320px;
-   height: 40px;
-   width: 40px;
-   background: linear-gradient(-45deg, black 10%, blue 10%, white);
-   border-radius: 50% 50% 50% 50%;
-}
-#saturni {
-   position: relative;
-   top: 171px;
-   left: 320px;
-   height: 40px;
-   width: 40px;
-   background: linear-gradient(-45deg, black 10%, blue 10%, white);
-   border-radius: 50% 50% 50% 50%;
-}
-#urani {
-   position: relative;
-   top: 171px;
-   left: 320px;
-   height: 40px;
-   width: 40px;
-   background: linear-gradient(-45deg, black 10%, blue 10%, white);
-   border-radius: 50% 50% 50% 50%;
-}
-#neptuni {
-   position: relative;
-   top: 171px;
-   left: 320px;
-   height: 40px;
-   width: 40px;
-   background: linear-gradient(-45deg, black 10%, blue 10%, white);
-   border-radius: 50% 50% 50% 50%;
-}*/
-
+    @keyframes orbita_venera {
+   0% {top: 200px;
+       left: 215px;
+    z-index: -1}
+    5% {top: 190px;
+       left: 200px;
+    z-index: -1}
+   10% {top: 165px;
+       left: 180px;
+       z-index: -1;}
+   15% {top: 160px;
+       left: 150px;
+    z-index: -1}
+   20% {top: 155px;
+       left: 120px;
+       z-index: -1;}
+    25% {top: 150px;
+       left: 100px;
+    z-index: -1}
+    30% {top: 145px;
+       left: 70px;
+       z-index: -1;}
+    35% {top: 140px;
+       left: 35px;
+    z-index: -1}
+    40% {top: 135px;
+       left: 15px;
+       z-index: -1;}
+    45% {top: 130px;
+       left: 0px;
+    z-index: -1}
+        46% {top: 220px;
+       left: 0px;
+    z-index: -1}
+    50% {top: 220px;
+       left: 0px;
+       z-index: 1;}
+    55% {top: 240px;
+       left: 19px;
+    z-index: 1}
+    60% {top: 260px;
+       left: 38px;
+       z-index: 1;}
+    65% {top: 280px;
+       left: 57px;
+    z-index: 1}
+    70% {top: 285px;
+       left: 76px;
+       z-index: 1;}
+    75% {top: 290px;
+       left: 95px;
+    z-index: 1}
+    80% {top: 280px;
+       left:114px;
+       z-index: 1;} 
+    85% {top: 270px;
+       left: 133px;
+    z-index: 1}
+    90% {top: 263px;
+       left: 150px;
+       z-index: 1;}
+    95% {top: 245px;
+       left: 171px;
+    z-index: 1}
+    100% {top:222px;
+       left: 215px;
+       z-index: 1;
+        }}
+        
 @keyframes orbita_henes {
    0% {top: 137px;
-       left: 365px;}
+       left: 365px;
+    z-index: -1}
    10% {top: 139px;
        left: 362px;
        z-index: -1;}
@@ -195,7 +211,7 @@ div#merkuri {
        left: 365px;
        z-index: 1;}
 }
-div#diielli:hover {
+div#dielli:hover {
    border: 3px solid hsla(0,80%,80%,.8);
    transform: scale(1.1, 1.1);
 }
@@ -210,92 +226,78 @@ div#venera:hover {
 div#toka:hover {
    border: 3px solid hsla(190,80%,80%,.8);
    transform: scale(1.2, 1.2);
-}
-    
-    </style>
-    
-    </head>
+}</style>    </head>
     <body>
-    <h1>Sistemi Diellor</h1>
-        <h2>Kalo me mouse mbi nje objekt qe te mesh me shume rreth tij</h2>
+        <h1>Sistemi diellor</h1>
         <div id="dielli"></div>
-            <div id="merkuri"></div>
-    <div id="venera"></div>
-    <div id="toka"></div>
+        <div id="merkuri"></div>
+        <div id="venera"></div>
+        <div id="toka"></div>
         <div id="hena"></div>
-        <div id="marsi"></div>
-        <div id="jupiteri"></div>
-        <div id="saturni"></div>
-        <div id="urani"></div>
-        <div id="neptuni"></div>
-        <span id="dielli_tekst">
-            <h3>Dielli</h3>
-            <div id="teksti1">
+        <span id="diellit"><h3>The Sun</h3>
             <ul>
-            <li>Masa:1.989 x 10^30 kg</li>
-            <li>Diametri:1,391,400 km</li>
-            <li>Temperatura e siperfaqes: 5,50505째c</li>
-                </ul></div></span>
-            <span id="merkuri_tekst">
-            <h3>Merkuri</h3>
+                <li>Mass: 1.989 x 10^30 kg</li>
+                <li>Diameter: 1,391,400 km</li>
+                <li>Surface Temp: About 5,505캽</li>
+            </ul>
+        </span>
+        <span id="mert"><h3>Mercury</h3>
             <ul>
-            <li>Mass: 3.285 x 10^23 kg</li>
-                <li>Diameteir: 4,879 km</li>
-                <li>Orbita: 58</li>
-            </ul></span>
-        <span id="venera_tekst">
-            <h3>Venera</h3>
+                <li>Mass: 3.285 x 10^23 kg</li>
+                <li>Diameter: 4,879 km</li>
+                <li>Orbit (Earth days): About 58</li>
+            </ul>
+        </span>
+        <span id="vent"><h3>Venus</h3>
             <ul>
-             <li>Masa: 4.867 x 10^24 kg</li>
-                <li>Diameteri: 12,104 km</li>
-                <li>Orbita : 116</li>
-            </ul></span>
-        <span id="toka_tekst">
-            <h3>Toka</h3>
+                <li>Mass: 4.867 x 10^24 kg</li>
+                <li>Diameter: 12,104 km</li>
+                <li>Orbit (Earth days): About 116</li>
+            </ul>
+        </span>
+        <span id="tokat"><h3>Earth</h3>
             <ul>
-                 <li>Masa: 5.972 x 10^24 kg</li>
-                <li>Diameteri: 12,742 km</li>
-                <li>Graviteti: 9.8 m/s</li>
-            </ul></span>
-        <span id="marsi_tekst">
+                <li>Mass: 5.972 x 10^24 kg</li>
+                <li>Diameter: 12,742 km</li>
+                <li>Surface gravity: 9.8 m/s</li>
+            </ul>
+            <span id="marsi_tekst">
             <h3>Marsi</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
             <li>Diametri:1,391,400 km</li>
-            <li>Temperatura e siperfaqes: 5,50505째c</li>
+            <li>Temperatura e siperfaqes: 5,50505캽</li>
             </ul></span>
         <span id="jupiteri_tekst">
             <h3>Jupiteri</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
             <li>Diametri:1,391,400 km</li>
-            <li>Temperatura e siperfaqes: 5,50505째c</li>
+            <li>Temperatura e siperfaqes: 5,50505캽</li>
             </ul></span>
         <span id="saturni_tekst">
             <h3>Saturni</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
             <li>Diametri:1,391,400 km</li>
-            <li>Temperatura e siperfaqes: 5,50505째c</li>
+            <li>Temperatura e siperfaqes: 5,50505캽</li>
             </ul></span>
         <span id="urani_tekst">
             <h3>Urani</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
             <li>Diametri:1,391,400 km</li>
-            <li>Temperatura e siperfaqes: 5,50505째c</li>
+            <li>Temperatura e siperfaqes: 5,50505캽</li>
             </ul></span>
         <span id="neptuni_tekst">
             <h3>Neptuni</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
             <li>Diametri:1,391,400 km</li>
-            <li>Temperatura e siperfaqes: 5,50505째c</li>
+            <li>Temperatura e siperfaqes: 5,50505캽</li>
             </ul></span>
             
-            
         </span>
-        
+        </div>
     </body>
-    
 </html>
