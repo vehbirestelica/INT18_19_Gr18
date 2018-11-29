@@ -71,7 +71,7 @@ div#merkuri {
    left: 150px;
    height: 25px;
    width: 25px;
-   background: linear-gradient(-45deg, black, brown);
+   background: linear-gradient(-10deg, #cccccc, #666666);
    border-radius: 50% 50% 50% 50%;
 }
 #venera {
@@ -93,9 +93,44 @@ div#merkuri {
    left: 320px;
    height: 40px;
    width: 40px;
-   background: linear-gradient(-45deg, black 10%, blue 10%, white);
+   background: linear-gradient(-45deg, black 10%, blue 10%, green, #6655ee);
    border-radius: 50% 50% 50% 50%;
 }
+#marsi {
+   position: relative;
+   top: 126px;
+   left: 440px;
+   height: 35px;
+   width: 35px;
+   background: linear-gradient(-45deg, black 10%, #330000 10%, #cc6600, #cc9900);
+   border-radius: 50% 50% 50% 50%;}
+#jupiteri {
+   position: relative;
+   top: 55px;
+   left: 620px;
+   height: 95px;
+   width: 95px;
+   background: linear-gradient(-45deg, black 10%, #ffcccc 10%, #663300, #ffcccc, #330000);
+   border-radius: 50% 50% 50% 50%;}
+#saturni{
+   position: relative;
+   top: -26px;
+   left: 870px;
+   height: 75px;
+   width: 75px;
+   background: linear-gradient(-45deg, black 10%, #ffcccc 10%, #996600, #ffcccc, #996600, #ffcccc);
+   border-radius: 50% 50% 50% 50%;}
+    #rrethi_saturnit{
+   position: relative;
+   top: -63px;
+   left: 834px;
+   height: 10px;
+   width: 150px;
+   background: linear-gradient(-0deg, #ffccaa 20% ,black 60%,#ffccaa 20% );
+   border-radius: 100% 100% 80% 80%;
+   z-index: 1;
+    }
+    
 #hena {
     position: relative;
     height: 10px;
@@ -226,7 +261,20 @@ div#venera:hover {
 div#toka:hover {
    border: 3px solid hsla(190,80%,80%,.8);
    transform: scale(1.2, 1.2);
-}</style>    </head>
+}
+div#marsi:hover {
+   border: 3px solid hsla(30,80%,80%,.8);
+    transform: scale(1.2, 1.2);}
+div#jupiteri:hover {
+   border: 3px solid hsla(30,80%,80%,.8);
+    transform: scale(1.2, 1.2);}
+div#saturni:hover {
+   border: 3px solid hsla(30,80%,80%,.8);
+    transform: scale(1.2, 1.2);}
+        
+
+        </style>  
+    </head>
     <body>
         <h1>Sistemi diellor</h1>
         <div id="dielli"></div>
@@ -234,6 +282,10 @@ div#toka:hover {
         <div id="venera"></div>
         <div id="toka"></div>
         <div id="hena"></div>
+        <div id="marsi"></div>
+        <div id="jupiteri"></div>
+        <div id="saturni"></div>
+        <div id="rrethi_saturnit"></div>
         <span id="diellit"><h3>The Sun</h3>
             <ul>
                 <li>Mass: 1.989 x 10^30 kg</li>
