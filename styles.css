@@ -1,38 +1,23 @@
-
-p1,p2 {
-    position: absolute;
-    top: 820px;
-    left: 100px;
-}
-p3,p4{
-    position: absolute;
-    top: 820px;
-    right: 100px;
+#tekstet{
+    background-color:white;
+    margin-top: 500px;
+        
     
 }
-p5,p6{
-   
-    position: absolute;
-    left: 590px;
-    top: 820px;
-}
-p7,p8{
-
-    position: relative;
-    right: 450px;
-    top: 1200;
-
-}
-p9,p10{
-    position: relative;
-    bottom: -100px;
-    left: 33px;
-}
-p11,p12{
-    position: relative;
-    left: 524px;
-    bottom: 30px;
-}
+#tekst1{
+            position: relative;
+            float: left;
+            margin: 10px;
+            width: 30%;
+            color: whitesmoke;
+           }
+#tekst2{
+            float: left;
+            position: relative;
+            margin:10px;
+            width: 30%;
+            color:whitesmoke;
+        }
 table{
     width: 100%;
 }
