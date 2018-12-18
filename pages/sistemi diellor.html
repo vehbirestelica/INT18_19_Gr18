@@ -46,12 +46,17 @@ li {
  color: white;
    line-height: 20px; 
 }
-span#diellit, span#mert, span#vent, span#tokat {
+span#diellit, span#mert, span#vent, span#tokat, marsi_tekst, jupiteri_tekst, saturni_tekst, urani_tekst, neptuni_tekst {
    position: fixed;
    bottom: 0;
    right: 0;
    margin: 30px;
-   display: none; 
+    visibility: hidden;
+   animation-name: visibility;
+   animation-delay: 1s;
+   animation-duration: 10s;
+   animation-iteration-count: 1
+   
 }
 @keyframes dukshmeria {
    from {visibility: hidden;}
@@ -251,10 +256,18 @@ div#dielli:hover {
    border: 3px solid hsla(0,80%,80%,.8);
    transform: scale(1.1, 1.1);
 }
+div#dielli:hover span#diellit
+{
+        display:block;
+}
 div#merkuri:hover {
    border: 3px solid hsla(0,30%,80%,.8);
    transform: scale(1.1, 1.1);
 }
+    div#merkuri:hover span#mert{
+        display: block;
+        
+    }
 div#venera:hover {
    border: 3px solid hsla(60,80%,80%,.8);
    transform: scale(1.2, 1.2);
@@ -265,19 +278,23 @@ div#toka:hover {
 }
 div#marsi:hover {
    border: 3px solid hsla(30,80%,80%,.8);
-    transform: scale(1.2, 1.2);}
+    transform: scale(1.2, 1.2);
+    }
 div#jupiteri:hover {
    border: 3px solid hsla(30,80%,80%,.8);
-    transform: scale(1.2, 1.2);}
-div#saturni:hover {
+    transform: scale(1.2, 1.2);
+    }
+div#saturni:hover 
+    {
    border: 3px solid hsla(30,80%,80%,.8);
-    transform: scale(1.2, 1.2);}
-        
-
-        </style>  
+    transform: scale(1.2, 1.2);
+    }
+    
+    </style>  
     </head>
     <body>
         <h1>Sistemi diellor</h1>
+        <h2>Kalo mbi me mouse qe te mesosh me shume!</h2>
         <div id="dielli"></div>
         <div id="merkuri"></div>
         <div id="venera"></div>
@@ -313,7 +330,7 @@ div#saturni:hover {
                 <li>Mass: 5.972 x 10^24 kg</li>
                 <li>Diameter: 12,742 km</li>
                 <li>Surface gravity: 9.8 m/s</li>
-            </ul>
+            </ul></span>
             <span id="marsi_tekst">
             <h3>Marsi</h3>
             <ul>
@@ -349,8 +366,7 @@ div#saturni:hover {
             <li>Diametri:1,391,400 km</li>
             <li>Temperatura e siperfaqes: 5,50505°c</li>
             </ul></span>
-            
-        </span>
-        </div>
     </body>
 </html>
+            
+   
