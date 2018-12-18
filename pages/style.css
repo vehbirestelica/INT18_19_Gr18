@@ -140,3 +140,15 @@ button.social
 {
 	background:#dd4b39;
 }
+.facebook a {
+	text-decoration: none;
+	color: white;
+}
+.twitter a {
+	text-decoration: none;
+	color: white;
+}
+.google a {
+	text-decoration: none;
+	color: white;
+}
