@@ -2,6 +2,45 @@
 <html>
     <head>
         <title>Sistemi Diellor</title>
+        <script src="jquery-1.11.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#dielli").click(function(){
+            $("#diellit").slideToggle("slow");
+           
+        });
+    });
+    $(document).ready(function(){
+        $("#merkuri").click(function(){
+            $("#mert").slideToggle("slow");          
+        });
+    });
+    $(document).ready(function(){
+        $("#venera").click(function(){
+            $("#vent").slideToggle("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#toka").click(function(){
+            $("#tokat").slideToggle("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#marsi").click(function(){
+            $("#marsit").slideToggle("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#jupiteri").click(function(){
+            $("#jupiterit").slideToggle("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#saturni").click(function(){
+            $("#saturnit").slideToggle("slow");
+        });
+    });
+    </script>
 <style>
 body {
     background-image: url(images/universi.jpg);
@@ -11,7 +50,7 @@ h1 {
    position: fixed;
    font-family: Arial
    font-size: 2em;
-   text-align: center;
+left: 500px;
    color: white; 
    text-shadow: 2px 2px 2px gray;
    letter-spacing: 5px;
@@ -20,20 +59,21 @@ h1 {
 h2 {
    position: fixed;
    top: 60px;
+    left: 460px;
    font-family: Arial;
    font-size: 16px;
    text-align: center;
    color: white; 
-   visibility: hidden;
-   animation-name: visibility;
-   animation-delay: 1s;
-   animation-duration: 10s;
-   animation-iteration-count: 1;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+
+
 }
 h3 {
+    color: white;
    font-family: Arial;
    font-size: 20px;
-   text-align: center;
+   text-align:left;
 }
 span {
    font-family: Arial;
@@ -41,26 +81,12 @@ span {
    color: white;
    text-align: left;
    margin: 10px;
+   
 }
 li {
  color: white;
    line-height: 20px; 
-}
-span#diellit, span#mert, span#vent, span#tokat, marsi_tekst, jupiteri_tekst, saturni_tekst, urani_tekst, neptuni_tekst {
-   position: fixed;
-   bottom: 0;
-   right: 0;
-   margin: 30px;
-    visibility: hidden;
-   animation-name: visibility;
-   animation-delay: 1s;
-   animation-duration: 10s;
-   animation-iteration-count: 1
-   
-}
-@keyframes dukshmeria {
-   from {visibility: hidden;}
-   to {visibility: visible;}
+    text-align:left;
 }
 div#dielli {
    position: fixed;
@@ -256,18 +282,10 @@ div#dielli:hover {
    border: 3px solid hsla(0,80%,80%,.8);
    transform: scale(1.1, 1.1);
 }
-div#dielli:hover span#diellit
-{
-        display:block;
-}
 div#merkuri:hover {
    border: 3px solid hsla(0,30%,80%,.8);
    transform: scale(1.1, 1.1);
 }
-    div#merkuri:hover span#mert{
-        display: block;
-        
-    }
 div#venera:hover {
    border: 3px solid hsla(60,80%,80%,.8);
    transform: scale(1.2, 1.2);
@@ -289,12 +307,38 @@ div#saturni:hover
    border: 3px solid hsla(30,80%,80%,.8);
     transform: scale(1.2, 1.2);
     }
-    
+    #diellit{
+     display: none;
+    }
+    #mert{
+        display: none;
+        
+    }
+    #vent{
+        display: none;
+    }
+    #tokat{
+        display: none;
+    }
+    #marsit{
+        display: none;
+    }
+#jupiterit{
+        display: none;
+    }
+#saturnit{
+        display: none;
+    }
+#uranit{
+        display: none;
+    }
+#neptunit{
+        display: none;    
     </style>  
     </head>
     <body>
         <h1>Sistemi diellor</h1>
-        <h2>Kalo mbi me mouse qe te mesosh me shume!</h2>
+        <h2>Kliko mbi me mouse qe te mesosh me shume!</h2>
         <div id="dielli"></div>
         <div id="merkuri"></div>
         <div id="venera"></div>
@@ -304,13 +348,14 @@ div#saturni:hover
         <div id="jupiteri"></div>
         <div id="saturni"></div>
         <div id="rrethi_saturnit"></div>
-        <span id="diellit"><h3>The Sun</h3>
+        <div id="diellit">
+        <h3>The Sun</h3>
             <ul>
                 <li>Mass: 1.989 x 10^30 kg</li>
                 <li>Diameter: 1,391,400 km</li>
                 <li>Surface Temp: About 5,505°c</li>
             </ul>
-        </span>
+        </div>
         <span id="mert"><h3>Mercury</h3>
             <ul>
                 <li>Mass: 3.285 x 10^23 kg</li>
@@ -331,35 +376,35 @@ div#saturni:hover
                 <li>Diameter: 12,742 km</li>
                 <li>Surface gravity: 9.8 m/s</li>
             </ul></span>
-            <span id="marsi_tekst">
+            <span id="marsit">
             <h3>Marsi</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
             <li>Diametri:1,391,400 km</li>
             <li>Temperatura e siperfaqes: 5,50505°c</li>
             </ul></span>
-        <span id="jupiteri_tekst">
+        <span id="jupiterit">
             <h3>Jupiteri</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
             <li>Diametri:1,391,400 km</li>
             <li>Temperatura e siperfaqes: 5,50505°c</li>
             </ul></span>
-        <span id="saturni_tekst">
+        <span id="saturnit">
             <h3>Saturni</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
             <li>Diametri:1,391,400 km</li>
             <li>Temperatura e siperfaqes: 5,50505°c</li>
             </ul></span>
-        <span id="urani_tekst">
+        <span id="uranit">
             <h3>Urani</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
             <li>Diametri:1,391,400 km</li>
             <li>Temperatura e siperfaqes: 5,50505°c</li>
             </ul></span>
-        <span id="neptuni_tekst">
+        <span id="neptunit">
             <h3>Neptuni</h3>
             <ul>
             <li>Masa:1.989 x 10^30 kg</li>
