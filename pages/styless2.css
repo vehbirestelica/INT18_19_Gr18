@@ -1,0 +1,142 @@
+* {
+   margin: 0;
+    padding: 0;
+    
+}
+body{
+    text-decoration: none;
+    background-image: url(images/tek.jpg);
+}
+nav{
+    width:100%;
+    height: 50px;
+    background-color: black;
+}
+nav p {
+    font-family: arial;
+    color: whitesmoke;
+    font-size:24px;
+    line-height: 55px;
+    float: left;
+    padding: 0px 20px;
+}
+nav ul{
+    float: left;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    font-family: arial;
+    color: whitesmoke;
+    font-size:14px;
+    padding: 22px 14px;
+    display: block;
+    text-decoration: none;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    border-radius:0px 0px 4px 4px;
+    z-index: 1;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li a{
+    padding: 8px 14px;
+}
+nav ul li ul li {
+    width: 180px;
+    border-radius:4px; 
+}
+nav ul li ul li a:hover{
+    background-color: #006600;
+}
+body{
+    color: white;
+}
+h2{
+    border: 1px solid whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    border-width: thick;
+
+}
+.kolona{
+    float: left;
+    width: 400px;
+}
+.apple{
+    margin-left:50px;
+    color:whitesmoke;
+    font-size: 20px;
+    width: 800px;
+border-radius: 10px;
+}
+.fig{
+    border: 5px dashed white;
+
+}
+td{
+    border: 5px solid white;
+    padding-left: 10px;
+}
+#cell1{
+    background-image: url(images/technology.jpg);
+    background-size: cover;
+    width:800px;
+    height: 500px;
+  
+}
+#cell2{
+    background-image: url(images/iphone7group-580x358.jpeg);
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+}
+#cell3{
+    background-image: url(images/phone.jpg);
+     background-size: cover;
+    width: 500px;
+    height: 250px;
+}
+#hyrja{
+ font-size: 40px;
+    font-family: serif;
+    margin-top: 30px;
+}
+#t1{
+    position: relative;
+    top: 180px;
+}
+#t2{
+    position: relative;
+    top: 50px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.kolona1{
+    float: right;
+}
+.google{
+    width: 50%;
+}
+.fig2{
+    border: 5px;
+     border-style: groove;
+    position: relative;
+    top:20px;
+}
+.fig4{
+    border: 5px;
+    position: relative;
+    top: -500px;
+    border-style: groove;
+}
