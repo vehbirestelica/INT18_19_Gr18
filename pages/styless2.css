@@ -31,9 +31,9 @@ nav ul li{
     position: relative;
 }
 nav ul li a{
-    font-family: arial;
+    font-family: sans-serif;
     color: whitesmoke;
-    font-size:18px;
+    font-size: 15px;
     padding: 22px 14px;
     display: block;
     text-decoration: none;
