@@ -35,6 +35,9 @@ nav ul li a{
     display: block;
     text-decoration: none;
 }
+nav ul li a:hover {
+    background-color: #006600;
+}
 nav ul li ul{
     display: none;
     position: absolute;
