@@ -7,10 +7,10 @@
             background-attachment: fixed;
             background-size: cover;
         }
-    nav{
+nav{
     width:100%;
     height: 50px;
-    background-color: black;
+    color: transparent;
 }
 nav p {
     font-family: arial;
@@ -19,6 +19,7 @@ nav p {
     line-height: 55px;
     float: left;
     padding: 0px 20px;
+    color: transparent;
 }
 nav ul{
     float: left;
@@ -30,14 +31,15 @@ nav ul li{
 }
 nav ul li a{
     font-family: arial;
-    color: whitesmoke;
-    font-size:18px;
+    font-size:20px;
+    color: darkgrey;
     padding: 0px 20px;
     display: block;
     text-decoration: none;
 }
 nav ul li a:hover {
-    background-color: #006600;
+    text-decoration: none;
+    background-color: transparent;
 }
 nav ul li ul{
     display: none;
@@ -58,7 +60,7 @@ nav ul li ul li {
     border-radius:4px; 
 }
 nav ul li ul li a:hover{
-    background-color: #006600;
+    background-color: transparent;
 }
         h1{
             position: relative;
@@ -82,8 +84,10 @@ nav ul li ul li a:hover{
             float:left;
         }
         .pershkrimi{
-          width: 50%; 
-            background-color: whitesmoke;
+            font-size: 15px;
+            font-family: sans-serif;
+            width: 50%; 
+            background-color: transparent;
             color: black;
             font-family:cursive;
             border-radius: 30px;
@@ -105,17 +109,18 @@ nav ul li ul li a:hover{
             position: relative;
             top: 80px;
             border: 4px solid black;
-            background-color: burlywood;
+            background-color: transparent;
             width: 50%;
-            font-size: 20px;
-            font-family: cursive;
+            font-size: 15px;
+            font-family: sans-serif;
         }
         #sektor{
             border: 4px solid white;
         }
         #teksti{
-    background-color:black;
-    color: whitesmoke;
+    background-color:white;
+    color: black;
+    border-radius: 25%;
         }
 
     </style>
@@ -130,24 +135,24 @@ function goBack() {
     <nav>
     <ul>
         <li><button id="teksti"onclick="goBack()">&laquo <i class="fas fa-home"> Home </i></button></li>
-        <li><a href="sports.html">Sports &nbsp&nbsp&nbsp |</a></li>
-        <li><a href="lifestyle.html">Lifestyle &nbsp&nbsp&nbsp |</a></li>
-        <li><a href="tech.html">Tech &nbsp&nbsp&nbsp |</a></li>
-        <li><a href="longtextlink.html">Long text link &nbsp&nbsp&nbsp |</a></li>
-        <li><a href="contact.html">Contact Us &nbsp&nbsp&nbsp |</a></li>
-        <li><a href="#">More Options</a>
+        <li><a href="sports.html"><b>Sports</b> &nbsp&nbsp&nbsp |</a></li>
+        <li><a href="lifestyle.html"><b>Lifestyle</b> &nbsp&nbsp&nbsp |</a></li>
+        <li><a href="tech.html"><b>Tech</b> &nbsp&nbsp&nbsp |</a></li>
+        <li><a href="longtextlink.html"><b>Long text link</b> &nbsp&nbsp&nbsp |</a></li>
+        <li><a href="contact.html"><b>Contact Us</b> &nbsp&nbsp&nbsp |</a></li>
+        <li><a href="#"><b>More Options</b></a>
             <ul>
-            <li><a href="sistemi%20diellor.html">Sistemi Diellor</a></li>
-        	<li><a href="signup.html"> Sign Up </a></li>
-        	<li><a href="login.html"> Log In </a></li>
+            <li><a href="sistemi%20diellor.html"><b>Sistemi Diellor</b></a></li>
+        	<li><a href="signup.html"> <b>Sign Up</b> </a></li>
+        	<li><a href="login.html"> <b>Log In</b> </a></li>
             </ul></li></ul>
-    </nav><br><hr>
-   <div id="titulli"><h1>Stan Lee</h1></div>
-   <div class="pershkrimi kolona"><p><b>Stan Lee (born Stanley Martin Lieber December 28, 1922 – November 12, 2018) was an American comic book writer, editor, and publisher who was active from the 1940s to the 2010s. He rose through the ranks of a family-run business to become Marvel Comics' primary creative leader for two decades, leading its expansion from a small division of a publishing house to a multimedia corporation that dominated the comics industry.
+    </nav><br>
+   <div id="titulli"><h1>Stan Lee</h1></div><br><br>
+   <div class="pershkrimi kolona"><p>Stan Lee (born Stanley Martin Lieber December 28, 1922 – November 12, 2018) was an American comic book writer, editor, and publisher who was active from the 1940s to the 2010s. He rose through the ranks of a family-run business to become Marvel Comics' primary creative leader for two decades, leading its expansion from a small division of a publishing house to a multimedia corporation that dominated the comics industry.
 
 In collaboration with others at Marvel—particularly co-writer/artists Jack Kirby and Steve Ditko—he co-created numerous popular fictional characters, including superheroes Spider-Man, the X-Men, Iron Man, Thor, the Hulk, the Fantastic Four, Black Panther, Daredevil, Doctor Strange, Scarlet Witch and Ant-Man. In doing so, he pioneered a more naturalistic approach to writing superhero comics in the 1960s, and in the 1970s he challenged the restrictions of the Comics Code Authority, indirectly leading to changes in its policies. In the 1980s he pursued development of Marvel properties in other media, with mixed results. Following his retirement from Marvel in the 1990s, he remained a public figurehead for the company, and frequently made cameo appearances in films based on Marvel characters, on which he received an honorary "executive producer" credit. Meanwhile, he continued independent creative ventures into his 90s, until his death in 2018.
 
-       Lee was inducted into the comic book industry's Will Eisner Award Hall of Fame in 1994 and the Jack Kirby Hall of Fame in 1995. He received the NEA's National Medal of Arts in 2008.</b></p></div>
+       Lee was inducted into the comic book industry's Will Eisner Award Hall of Fame in 1994 and the Jack Kirby Hall of Fame in 1995. He received the NEA's National Medal of Arts in 2008.</p></div>
     <div class="sp kolona"><img src="images/Lee.jpg"></div>
     <div class="marvel kolona1">Lee was shown in numerous cameo appearances in many Marvel titles, appearing in audiences and crowds at many characters' ceremonies and parties. For example, he is seen hosting an old-soldiers reunion in Sgt. Fury and his Howling Commandos #100 (July 1972), in The Amazing Spider-Man #169 (June 1977), as a bar patron in Marvels #3 (1994),[139] at Karen Page's funeral in Daredevil vol. 2, #8 (June 1998), and as the priest officiating at Luke Cage and Jessica Jones' wedding in New Avengers Annual #1 (June 2006). Lee and Kirby appear as professors in Marvel Adventures Spider-Man #19 (2006).
 
