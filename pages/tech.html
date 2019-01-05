@@ -165,7 +165,8 @@ body {
   text-align: center;
 }
 
-.karosel1:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+.karosel1:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); 
+        }
 .karosel2:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
 .karosel3:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
 .karosel4:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
@@ -174,10 +175,21 @@ body {
 .karosel7:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
 .karosel8:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
 .karosel9:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
-
+        
+#teksti{
+    position: relative;
+    top:23px;
+    background-color:black;
+    color: whitesmoke;
+        }
 
     
     </style>
+    <script>
+function goBack() {
+    window.history.back()
+}
+</script>
     <link rel="stylesheet" href="styless2.css">
     <title>Tech</title>
     </head>
@@ -186,9 +198,9 @@ body {
     <hr>
     <nav>
     <ul>
-        <li><a href="index.html"><i class="fas fa-home"> Home </i>&nbsp&nbsp&nbsp |</a></li>
+        <li><button id="teksti"onclick="goBack()">&laquo <i class="fas fa-home"> Home </i></button></li>
         <li><a href="sports.html">Sports &nbsp&nbsp&nbsp |</a></li>
-        <li><a href="lifestyle.html">Lifestyle &nbsp&nbsp&nbsp |</a></li>
+        <li><a href="Stan%20Lee.html">Lifestyle &nbsp&nbsp&nbsp |</a></li>
         <li><a href="tech.html">Tech &nbsp&nbsp&nbsp |</a></li>
         <li><a href="longtextlink.html">Long text link &nbsp&nbsp&nbsp |</a></li>
         <li><a href="contact.html">Contact Us &nbsp&nbsp&nbsp |</a></li>

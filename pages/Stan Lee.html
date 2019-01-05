@@ -113,14 +113,23 @@ nav ul li ul li a:hover{
         #sektor{
             border: 4px solid white;
         }
+        #teksti{
+    background-color:black;
+    color: whitesmoke;
+        }
+
     </style>
     <title>Stan Lee</title>
+    <script>
+function goBack() {
+    window.history.back()
+}</script>
     </head>
 <body>
     <hr>
     <nav>
     <ul>
-        <li><a href="index.html"><i class="fas fa-home"> Home </i>&nbsp&nbsp&nbsp |</a></li>
+        <li><button id="teksti"onclick="goBack()">&laquo <i class="fas fa-home"> Home </i></button></li>
         <li><a href="sports.html">Sports &nbsp&nbsp&nbsp |</a></li>
         <li><a href="lifestyle.html">Lifestyle &nbsp&nbsp&nbsp |</a></li>
         <li><a href="tech.html">Tech &nbsp&nbsp&nbsp |</a></li>
