@@ -39,7 +39,7 @@ nav ul li a{
     text-decoration: none;
 }
 nav ul li a:hover {
-    background-color: #006600;
+    background-color: black;
 }
 nav ul li ul{
     display: none;
