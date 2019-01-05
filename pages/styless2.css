@@ -6,6 +6,8 @@
 body{
     text-decoration: none;
     background-image: url(images/tek.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 nav{
     width:100%;
@@ -31,10 +33,13 @@ nav ul li{
 nav ul li a{
     font-family: arial;
     color: whitesmoke;
-    font-size:14px;
+    font-size:18px;
     padding: 22px 14px;
     display: block;
     text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #006600;
 }
 nav ul li ul{
     display: none;
@@ -139,4 +144,21 @@ a{
     position: relative;
     top: -500px;
     border-style: groove;
+}
+table{
+    width: 100%;
+}
+th{
+    text-align: left;
+    padding: 10px;
+}
+#fig5{
+    position: absolute;
+    top: 2370px;
+    right: 0px;
+}
+#microsoft{
+    color: green;
+    background-image: url(images/microsoft1.jpg);
+    background-size: cover;
 }
