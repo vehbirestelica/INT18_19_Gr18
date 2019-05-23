@@ -1,0 +1,32 @@
+body {
+	background: linear-gradient(rgba(0,0,50,0.5), rgba(0,0,50,0.5)), url(image.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.login-box {
+	max-width: 700px;
+	float: none;
+	margin: 150px auto;
+}
+.login-left {
+	background-color: rgba(211,211,211,0.4);
+	padding:30px;
+}
+.login-right{
+	background: #fff;
+	padding:30px;
+	background-color: rgba(211,211,211,0.6);
+}
+.form-control {
+	background-color: transparent !important;
+}
+a {
+	color: #fff !important;
+}
+h1 {
+	color: #fff !important;
+	margin-top: 200px !important;
+	text-align:center;
+	text-transform: uppercase;
+}
